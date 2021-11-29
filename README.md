@@ -25,3 +25,14 @@ El cifrado simétrico es la forma de cifrado en la que se utiliza una clave secr
 SSH se basa en la Infraestructura de clave pública, conocida por sus siglas en inglés PKI (Public Key Infrastructure) y los algoritmos criptográficos asimétricos más utilizados en el mundo PKI son RSA, DSA, ECDSA y EdDSA.
 
 # Autenticación SSH
+
+Una vez que las máquinas a establecer conexión verifiquen la versión de SSH tienen que negociar una clave simétrica para cifrar toda la conexión.
+
+La clave simétrica para cifrar la conexión no es lo mismo que las claves utilizadas para la autenticación, sino que se genera una clave compartida a través del intercambio de claves.
+
+Para generar la clave compartida se utilizan las claves públicas del cliente y la privada del servidor, de esta forma el cliente ya ha autenticado al servidor.
+
+En cuanto a la autenticación se desarrolla una vez que el canal es confiable, en el punto en el que el cliente ha autenticado al servidor, pero el servidor aún no ha autenticado al cliente
+
+Normalmente se utiliza la autenticación de clave pública y esto implica una clave pública y una privada.
+Así cuando la máquina A encripta un mensaje con la clave pública de B, el mensaje sólo lo podrá desencriptar B con su clave privada.
