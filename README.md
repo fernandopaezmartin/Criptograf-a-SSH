@@ -16,8 +16,8 @@ Una vez ejecutados estos tres comandos con sus respectivos datos, se nos pedirá
 
 SSH usa tres tecnologías de cifrado:
 
-1. Cifrado simétrico
-2. Cifrado asimétrico
+1. Cifrado asimétrico
+2. Cifrado simétrico
 3. Hashing
 
 El cifrado simétrico es la forma de cifrado en la que se utiliza una clave secreta tanto para el cifrado como para el descifrado de un mensaje, para las dos partes de la comunicación, el cliente y el host. En contra, el poseedor de la clave puede descifrar todo el mensaje.
@@ -40,6 +40,8 @@ Así cuando la máquina A encripta un mensaje con la clave pública de B, el men
 Con este método solo se autentica la identidad y por eso es muy importante la gestión de claves ya que si una clave se distribuye erróneamente: entonces se podrá comprometer dicha clave.
 
 # Cifrado asimétrico
+
+![Cifrado Asimétrico](https://github.com/fernandopaezmartin/Criptografia_SSH/blob/main/imagenes/cifrado-asimetrico.jpg)
 
 El uso tan extendido del cifrado asimétrico radica en su fortaleza porque con la clave privada se puede obtener la clave pública, pero no al revés. Es por esto que  la clave pública puede distribuirse sin problemas.
 
