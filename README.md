@@ -21,3 +21,7 @@ SSH usa tres tecnologías de cifrado:
 3. Hashing
 
 El cifrado simétrico es la forma de cifrado en la que se utiliza una clave secreta tanto para el cifrado como para el descifrado de un mensaje, para las dos partes de la comunicación, el cliente y el host. En contra, el poseedor de la clave puede descifrar todo el mensaje.
+
+SSH se basa en la Infraestructura de clave pública, conocida por sus siglas en inglés PKI (Public Key Infrastructure) y los algoritmos criptográficos asimétricos más utilizados en el mundo PKI son RSA, DSA, ECDSA y EdDSA.
+
+# Autenticación SSH
