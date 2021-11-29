@@ -1,4 +1,6 @@
 # Criptografía_SSH
+![Imagen Portada Cifrado SSh](https://github.com/fernandopaezmartin/Criptografia_SSH/blob/main/imagenes/ssh_portada.jpg)
+
 
 SSH o Secure Shell es un protocolo que nos permite gestionar y administrar nuestros equipos de forma remota. Utiliza un sistema criptográfico para asegurarse que todas las comunicaciones entre equipo local y remoto estén cifradas. SSH está disponible en Windows, GNU/Linux y MacOS.
 
