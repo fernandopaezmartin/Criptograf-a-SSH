@@ -44,8 +44,8 @@ Con este método solo se autentica la identidad y por eso es muy importante la g
 El uso tan extendido del cifrado asimétrico radica en su fortaleza porque con la clave privada se puede obtener la clave pública, pero no al revés. Es por esto que  la clave pública puede distribuirse sin problemas.
 
 Para generar las claves públicas se disponen de tres tipos de cifrado:
-- RSA
-- DSA
-- Curvas elípticas
 
-La integridad de cada una de las opciones viene dada por la naturaleza matemática que constituye el núcleo de cada algoritmo y por tanto la naturaleza matemática utilizada para la generación de las claves públicas.
+- RSA : fue utilizado por primera vez en 1978. La criptografía RSA se basa en la creencia matemática de que factorizar grandes números semiprimos es difícil por naturaleza.
+- DSA : es un algoritmo más complejo. Tiene en cuenta un número aleatorio que se utiliza con la firma del mensaje, es decir, va un paso más allá que RSA.
+- Curvas elípticas: son ECDSA y EdDSA. Estos algoritmos se basan en el supuesto de que no existe una solución eficiente para resolver un problema de logaritmos discretos, igual que DSA. La diferencia está en que DSA utiliza una operación matemática llamada exponenciación modular y los algoritmos de curvas elípticas usan curvas elípticas. Las curvas elípticas que se han usado entre otras cosas para solucionar el Teorema de Fermat se definen mediante ecuaciones cúbicas (de 3º)
+
