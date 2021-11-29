@@ -38,3 +38,5 @@ Normalmente se utiliza la autenticación de clave pública y esto implica una cl
 Así cuando la máquina A encripta un mensaje con la clave pública de B, el mensaje sólo lo podrá desencriptar B con su clave privada.
 
 Con este método solo se autentica la identidad y por eso es muy importante la gestión de claves ya que si una clave se distribuye erróneamente: entonces se podrá comprometer dicha clave.
+
+# Cifrado asimétrico
