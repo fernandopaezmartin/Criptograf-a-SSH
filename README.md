@@ -40,3 +40,13 @@ Así cuando la máquina A encripta un mensaje con la clave pública de B, el men
 Con este método solo se autentica la identidad y por eso es muy importante la gestión de claves ya que si una clave se distribuye erróneamente: entonces se podrá comprometer dicha clave.
 
 # Cifrado asimétrico
+
+El uso tan extendido del cifrado asimétrico radica en su fortaleza porque con la clave privada se puede obtener la clave pública, pero no al revés. Es por esto que  la clave pública puede distribuirse sin problemas.
+
+Para generar las claves públicas se disponen de tres tipos de cifrado:
+
+-RSA
+-DSA
+-Curvas elípticas
+
+La integridad de cada una de las opciones viene dada por la naturaleza matemática que constituye el núcleo de cada algoritmo y por tanto la naturaleza matemática utilizada para la generación de las claves públicas.
