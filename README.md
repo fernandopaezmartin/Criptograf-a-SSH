@@ -50,18 +50,12 @@ Con este método solo se autentica la identidad y por eso es muy importante la g
 # Cifrado simétrico
 ![Cifrado Simétrico](https://github.com/fernandopaezmartin/Criptografia_SSH/blob/main/imagenes/cifrado-simetrico.jpg)
 
-El cifrado cimétrico es una de las formas de encriptación que nos ofrece SSH. Se basa en la utilización de una clave secreta tanto para el cifrado como el descifrado, de modo que usuario y host la necesitarán para descifrar el mensaje.
+También llamado cifrado de “secreto compartido” (shared key) o cifrado de “clave secreta”, el cifrado simétrico es una de las formas de encriptación que nos ofrece SSH. Se basa en la utilización de una clave secreta tanto para el cifrado como el descifrado, de modo que usuario y host la necesitarán para descifrar el mensaje.
 
-El cifrado simétrico hace que usuario y host compartan una misma clave para descifrar sus mensajes, aunque en ocasiones se implementan dos claves que son fáciles de determinar una a partir de la otra.
+El cifrado simétrico hace que usuario y host compartan una misma clave para descifrar sus mensajes. En su contra a este tipo de cifrado, cualquier persona que tenga la clave puede cifrar y descifrar los mensajes.
 
-En su contra a este tipo de cifrado, cualquier persona que tenga la clave puede cifrar y descifrar los mensajes.
-
-
-
-
-
-
-
+Las claves simétricas se utilizan para cifrar toda la comunicación durante una sesión SSH. El proceso de creación de una clave simétrica se lleva a cabo mediante un algoritmo de intercambio de claves.
+El token secreto es específico para cada sesión SSH, y se genera antes de la autenticación del cliente. Una vez generada la clave, todos los paquetes entre las dos máquinas deben ser cifrados por la clave privada. Esto incluye la contraseña escrita en la consola por el usuario, por lo que las credenciales siempre están protegidas en la red.
 
 # Cifrado asimétrico
 
@@ -76,5 +70,16 @@ Para generar las claves públicas se disponen de tres tipos de cifrado:
 - Curvas elípticas: son ECDSA y EdDSA. Estos algoritmos se basan en el supuesto de que no existe una solución eficiente para resolver un problema de logaritmos discretos, igual que DSA. La diferencia está en que DSA utiliza una operación matemática llamada exponenciación modular y los algoritmos de curvas elípticas usan curvas elípticas. Las curvas elípticas que se han usado entre otras cosas para solucionar el Teorema de Fermat se definen mediante ecuaciones cúbicas (de 3º)
 
 
+# Hash o Hashing
+
+Otra forma de manipulación de datos que SSH aprovecha es el hash criptográfico. Las funciones hash criptográficas son métodos para crear una “firma” o un resumen de un conjunto de datos.
+
+Sus principales atributos distintivos son que nunca deben invertirse, son virtualmente imposibles de influenciar de manera predecible y son prácticamente únicas.
+
+Usar la misma función de hash y el mensaje debería producir el mismo hash; La modificación de cualquier parte de los datos debe producir un hash completamente diferente.
+
+Un usuario no debe ser capaz de producir el mensaje original de un hash dado, pero debe ser capaz de decir si un mensaje dado, produjo un hash dado.
+
+Así, los hashes se utilizan principalmente para propósitos de integridad de datos y para verificar la autenticidad de la comunicación. Éstos garantizan que el texto del mensaje recibido esté intacto y sin modificar.
 
 
