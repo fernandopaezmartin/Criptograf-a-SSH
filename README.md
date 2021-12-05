@@ -83,3 +83,10 @@ Un usuario no debe ser capaz de producir el mensaje original de un hash dado, pe
 Así, los hashes se utilizan principalmente para propósitos de integridad de datos y para verificar la autenticidad de la comunicación. Éstos garantizan que el texto del mensaje recibido esté intacto y sin modificar.
 
 
+# Capturas en Wireshark
+
+Con telnet los datos no están cifrados y por tanto podemos ver información entre los dos equipos. La opción Follow TCP stream "une" el flujo de paquetes individuales de tal manera que podamos verlo más claro.
+
+Un ejemplo con telnet
+
+
