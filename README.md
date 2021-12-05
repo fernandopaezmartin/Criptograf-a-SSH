@@ -99,6 +99,6 @@ Un ejemplo con ssh:
 ![ssh](https://github.com/fernandopaezmartin/Criptografia_SSH/blob/main/imagenes/captura%20wireshark2.png)
 
 # Webgrafía (Último acceso Diciembre 2021)
-https://es.wikipedia.org/wiki/Secure_Shell
-https://www.openssh.com/
-https://www.ssh.com/ssh/
+- https://es.wikipedia.org/wiki/Secure_Shell
+- https://www.openssh.com/
+- https://www.ssh.com/ssh/
