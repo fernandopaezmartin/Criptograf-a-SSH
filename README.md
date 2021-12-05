@@ -72,6 +72,8 @@ Para generar las claves públicas se disponen de tres tipos de cifrado:
 
 # Hash o Hashing
 
+![Hashing](https://github.com/fernandopaezmartin/Criptografia_SSH/blob/main/imagenes/ssh-tutorial-hash.jpg)
+
 Otra forma de manipulación de datos que SSH aprovecha es el hash criptográfico. Las funciones hash criptográficas son métodos para crear una “firma” o un resumen de un conjunto de datos.
 
 Sus principales atributos distintivos son que nunca deben invertirse, son virtualmente imposibles de influenciar de manera predecible y son prácticamente únicas.
@@ -87,6 +89,12 @@ Así, los hashes se utilizan principalmente para propósitos de integridad de da
 
 Con telnet los datos no están cifrados y por tanto podemos ver información entre los dos equipos. La opción Follow TCP stream "une" el flujo de paquetes individuales de tal manera que podamos verlo más claro.
 
-Un ejemplo con telnet
+Un ejemplo con telnet:
 
+![telnet](https://github.com/fernandopaezmartin/Criptografia_SSH/blob/main/imagenes/captura%20wireshark.png)
+
+
+Un ejemplo con ssh:
+
+![ssh](https://github.com/fernandopaezmartin/Criptografia_SSH/blob/main/imagenes/captura%20wireshark2.png)
 
