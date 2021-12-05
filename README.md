@@ -47,6 +47,22 @@ Así cuando la máquina A encripta un mensaje con la clave pública de B, el men
 
 Con este método solo se autentica la identidad y por eso es muy importante la gestión de claves ya que si una clave se distribuye erróneamente: entonces se podrá comprometer dicha clave.
 
+# Cifrado simétrico
+![Cifrado Simétrico](https://github.com/fernandopaezmartin/Criptografia_SSH/blob/main/imagenes/cifrado-simetrico.jpg)
+
+El cifrado cimétrico es una de las formas de encriptación que nos ofrece SSH. Se basa en la utilización de una clave secreta tanto para el cifrado como el descifrado, de modo que usuario y host la necesitarán para descifrar el mensaje.
+
+El cifrado simétrico hace que usuario y host compartan una misma clave para descifrar sus mensajes, aunque en ocasiones se implementan dos claves que son fáciles de determinar una a partir de la otra.
+
+En su contra a este tipo de cifrado, cualquier persona que tenga la clave puede cifrar y descifrar los mensajes.
+
+
+
+
+
+
+
+
 # Cifrado asimétrico
 
 ![Cifrado Asimétrico](https://github.com/fernandopaezmartin/Criptografia_SSH/blob/main/imagenes/cifrado-asimetrico.jpg)
@@ -58,4 +74,7 @@ Para generar las claves públicas se disponen de tres tipos de cifrado:
 - RSA : fue utilizado por primera vez en 1978. La criptografía RSA se basa en la creencia matemática de que factorizar grandes números semiprimos es difícil por naturaleza.
 - DSA : es un algoritmo más complejo. Tiene en cuenta un número aleatorio que se utiliza con la firma del mensaje, es decir, va un paso más allá que RSA.
 - Curvas elípticas: son ECDSA y EdDSA. Estos algoritmos se basan en el supuesto de que no existe una solución eficiente para resolver un problema de logaritmos discretos, igual que DSA. La diferencia está en que DSA utiliza una operación matemática llamada exponenciación modular y los algoritmos de curvas elípticas usan curvas elípticas. Las curvas elípticas que se han usado entre otras cosas para solucionar el Teorema de Fermat se definen mediante ecuaciones cúbicas (de 3º)
+
+
+
 
